@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="202.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+      <AnchorPane prefHeight="24.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="115.0" layoutY="8.0" text="Текст" AnchorPane.bottomAnchor="0.0">
+               <effect>
+                  <Blend />
+               </effect>
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="349.0" layoutY="8.0" text="Слова" AnchorPane.bottomAnchor="0.0">
+               <effect>
+                  <Blend />
+               </effect>
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <HBox prefHeight="93.0" prefWidth="524.0">
+         <children>
+            <TextArea fx:id="userText" prefHeight="82.0" prefWidth="234.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextArea>
+            <TextArea fx:id="selectedWords" prefHeight="100.0" prefWidth="224.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="24.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnRun" mnemonicParsing="false" onAction="#runJob" text="Выполнить">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnClear" mnemonicParsing="false" onAction="#clearFields" text="Очистить">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Pane prefHeight="41.0" prefWidth="590.0">
+         <children>
+            <Text layoutX="1.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В заданном русском тексте выбрать слова, которые без искажения могут быть написаны латинскими буквами, например: СВЕТА РОЕТ РОВ, ВОВКА СЕЕТ ОВЕС" textAlignment="CENTER" wrappingWidth="474.798828125">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Text>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Pane>
+   </children>
+</VBox>

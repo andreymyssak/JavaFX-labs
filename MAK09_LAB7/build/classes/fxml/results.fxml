@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="307.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ResultsController">
+    <children>
+        <Text layoutX="27.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Спасибо что воспользовались нашей системой!" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="388.984375">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+      <TextArea fx:id="txtArea" layoutX="21.0" layoutY="82.0" prefHeight="141.0" prefWidth="389.0" />
+        <Button fx:id="btnGoBackScreen" layoutX="21.0" layoutY="258.0" mnemonicParsing="false" onAction="#goBack" prefWidth="150.0" text="Назад" />
+        <Button fx:id="btnCloseWindow" layoutX="260.0" layoutY="258.0" mnemonicParsing="false" onAction="#closeWindow" prefWidth="150.0" text="ВЫХОД" />
+    </children>
+</AnchorPane>

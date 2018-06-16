@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.LineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane prefHeight="230.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-129.0" layoutY="-76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="193.0" prefWidth="311.0">
+         <children>
+            <Path layoutX="194.0" layoutY="157.0" stroke="BLACK" strokeType="INSIDE">
+                <elements>
+                    <MoveTo />
+                    <LineTo x="100.0" y="-20.0" />
+                  <LineTo x="100.0" y="60.0" />
+                  <LineTo y="80.0" />
+                  <LineTo />
+                </elements>
+               <fill>
+                  <LinearGradient endX="0.7952380952380952" endY="1.0" startX="0.5952380952380952" startY="0.26190476190476186">
+                     <stops>
+                        <Stop color="#ffa800" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path layoutX="278.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE">
+               <elements>
+                  <MoveTo x="15.0" y="25.0" />
+                  <LineTo x="15.0" y="110.0" />
+                  <LineTo x="90.0" y="150.0" />
+                  <LineTo x="90.0" y="70.0" />
+                  <LineTo x="15.0" y="30.0" />
+               </elements>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.5095238095238095">
+                     <stops>
+                        <Stop color="#ffa800" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path layoutX="258.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE">
+               <elements>
+                  <MoveTo y="-2.0" />
+                  <LineTo x="110.0" y="-20.0" />
+                  <LineTo x="110.0" y="57.0" />
+                  <LineTo y="78.0" />
+                  <LineTo />
+               </elements>
+               <fill>
+                  <LinearGradient endX="0.1" endY="0.6142857142857141" startY="0.05714285714285715">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#ffa800" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Path>
+            <Path fill="#ffa600" layoutX="179.0" layoutY="127.0" stroke="BLACK" strokeType="INSIDE">
+                <elements>
+                    <MoveTo x="15.0" y="25.0" />
+                    <LineTo x="15.0" y="110.0" />
+                  <LineTo x="80.0" y="150.0" />
+                  <LineTo x="80.0" y="70.0" />
+                  <LineTo x="15.0" y="30.0" />
+                </elements>
+            </Path>
+            <Path fill="#ffa800" layoutX="261.0" layoutY="186.0" rotate="-14.0" stroke="BLACK" strokeType="INSIDE">
+               <elements>
+                  <MoveTo y="-3.0" />
+                  <LineTo x="111.0" y="3.0" />
+                  <LineTo x="120.0" y="35.0" />
+                  <LineTo x="5.0" y="30.0" />
+                  <LineTo />
+               </elements>
+            </Path>
+            <Text layoutX="164.0" layoutY="229.0" opacity="0.26" rotate="-14.5" strokeType="OUTSIDE" strokeWidth="0.0" text="MAK-9">
+               <font>
+                  <Font size="83.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
